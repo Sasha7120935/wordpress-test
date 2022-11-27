@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="793568b0-cbad-4dc6-8a83-42213aca7146" name="Changes" comment="" />
+    <list default="true" id="793568b0-cbad-4dc6-8a83-42213aca7146" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/car/car.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/car/car.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +13,11 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2HuTvoVpWKTla7ZzCxJB5974lpW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,7 +55,7 @@
       <workItem from="1669204861929" duration="1294000" />
       <workItem from="1669279490883" duration="1850000" />
       <workItem from="1669313778967" duration="613000" />
-      <workItem from="1669539542920" duration="37006000" />
+      <workItem from="1669539542920" duration="37665000" />
     </task>
     <servers />
   </component>

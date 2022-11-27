@@ -18,6 +18,7 @@ function hcf_display_callback()
 {
     include dirname(__FILE__) . '/meta/form.php';
 }
+
 include dirname(__FILE__) . '/widget/tel-create-widget.php';
 
 function hcf_register_meta_boxes()
@@ -32,7 +33,7 @@ add_action('add_meta_boxes', 'hcf_register_meta_boxes');
  *
  * @param int $event_id
  */
-function hcf_save_meta_box(int $event_id )
+function hcf_save_meta_box(int $event_id)
 {
     $fields = [
         'hcf_color',
@@ -40,9 +41,9 @@ function hcf_save_meta_box(int $event_id )
         'hcf_fuel',
         'hcf_price'
     ];
-    foreach ( $fields as $field ) {
-        if ( array_key_exists( $field, $_POST ) ) {
-            update_post_meta( $event_id, $field, sanitize_text_field( $_POST[$field] ) );
+    foreach ($fields as $field) {
+        if (array_key_exists($field, $_POST)) {
+            update_post_meta($event_id, $field, sanitize_text_field($_POST[$field]));
         }
     }
 }
@@ -157,13 +158,15 @@ function recent_posts_function()
         'post_type' => 'car',
         'posts_per_page' => '10'
     ];
-    $carQuery = new WP_Query( $args );
-    if ( $carQuery->have_posts() ) :
-        while ( $carQuery->have_posts() ) : $carQuery->the_post();
-            $title .= '<li>' . get_the_title() .  '</li>';
+    $carQuery = new WP_Query($args);
+
+    if ($carQuery->have_posts()) :
+        while ($carQuery->have_posts()) : $carQuery->the_post();
+            $title .= '<li>' . get_the_title() . '</li>';
         endwhile;
-        else:
-        return '<p><strong>' . _e('not found','wl-test-theme') . '</strong></p>';
+    else:
+
+        return '<p><strong>' . _e('not found', 'wl-test-theme') . '</strong></p>';
     endif;
     wp_reset_query();
     return $title;
